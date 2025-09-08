@@ -1,0 +1,8 @@
+.container { max-width: 840px; margin: 0 auto; padding: 2rem; }
+.card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 1.5rem; }
+.row { display: flex; gap: 1rem; align-items: center; }
+.spacer { height: 1rem; }
+img.avatar { border-radius: 9999px; }
+.actions { display: flex; gap: .75rem; align-items: center; }
+.label { font-weight: 600; color: #374151; }
+.fact { font-size: 1.05rem; line-height: 1.5; }
