@@ -9,7 +9,7 @@ A full-stack Next.js + Postgres application that generates quirky, spoiler-free 
 - Authentication with NextAuth
 - PostgreSQL + Prisma ORM
 - Dockerized app and database
-- OpenAI API for trivia generation (with Hugging Face fallback)
+- OpenAI API for trivia generation (with Groq fallback)
 - CI/CD ready
 
 ---
