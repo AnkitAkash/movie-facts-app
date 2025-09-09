@@ -1,6 +1,6 @@
 # 🎬 Movie Facts App
 
-A full-stack Next.js + Postgres application that generates quirky, spoiler-free movie facts using AI (OpenAI with Hugging Face fallback).
+A full-stack Next.js + Postgres application that generates quirky, spoiler-free movie facts using AI (OpenAI with Groq fallback).
 
 ---
 
@@ -9,7 +9,7 @@ A full-stack Next.js + Postgres application that generates quirky, spoiler-free 
 - Authentication with NextAuth
 - PostgreSQL + Prisma ORM
 - Dockerized app and database
-- OpenAI API for trivia generation (with Hugging Face fallback)
+- OpenAI API for trivia generation (with Groq fallback)
 - CI/CD ready
 
 ---
@@ -18,7 +18,7 @@ A full-stack Next.js + Postgres application that generates quirky, spoiler-free 
 - [Docker](https://docs.docker.com/get-docker/) installed
 - API keys:
   - [OpenAI API Key](https://platform.openai.com/api-keys)
-  - [Hugging Face API Key](https://huggingface.co/settings/tokens)
+  - [Groq API Key](https://console.groq.com/keys)
 
 ---
 
@@ -32,7 +32,7 @@ DATABASE_URL="postgresql://postgres:mysecretpassword@movie-postgres:5432/movie_f
 
 # API Keys
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
-HF_API_KEY=hf_xxxxxxxxxxxxxxxxxxxx
+GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
 
 # Auth secret (generate with: openssl rand -base64 32)
 NEXTAUTH_SECRET=your_nextauth_secret
@@ -145,3 +145,11 @@ docker restart movie-app
 ```
 docker logs -f movie-app
 ```
+
+## 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+## 📌 Roadmap
+- [ ] Add movie search functionality
+- [ ] Add user profiles with saved facts
+- [ ] Deploy to Vercel with managed Postgres
